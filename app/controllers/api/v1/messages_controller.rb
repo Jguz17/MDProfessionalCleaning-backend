@@ -23,5 +23,6 @@ class Api::V1::MessagesController < ApplicationController
         Message.find(params[:id]).destroy
 
         render json: {message: 'success'}
+        # 
     end
 end
